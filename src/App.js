@@ -85,7 +85,7 @@ function App() {
       if (post.name === user) {
         newLogLines.push({
           type: 'post',
-          entry: `> ${post.name} - ${post.content} (${getReadableTimeDiff(post.time, new Date())})`
+          entry: `> ${post.content} (${getReadableTimeDiff(post.time, new Date())})`
         })
       }
     })

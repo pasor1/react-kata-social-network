@@ -2,6 +2,10 @@
 
 This is [Kata Social Network](https://github.com/sandromancuso/twitter-kata-java) in React way ... a bit unusual :sweat_smile:
 
+## [working demo](https://gifted-ptolemy-f16f5f.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5aa2ed0b-1525-4bdf-97ba-555984809218/deploy-status)](https://app.netlify.com/sites/gifted-ptolemy-f16f5f/deploys)
+
 ## Available Scripts
 
 In the project directory, you can run:
