@@ -10,7 +10,7 @@ function App() {
   const [command, setCommand] = useState('');
   const [posts, setPosts] = useState([]);
   const [log, setLog] = useState([{
-    time: new Date(),
+    type: 'command',
     entry: `Welcome to Kata Social Network`
   }]);
 
@@ -24,7 +24,7 @@ function App() {
     if (event.keyCode === 13) {
       event.preventDefault();
       // append command to log
-      const newLogLine = [{ tipe: 'command', entry: `> ${command}` }];
+      const newLogLine = [{ entry: `> ${command}` }];
       setLog(prevLog => [...prevLog, ...newLogLine]);
 
       if (command.includes(' -> ')) { // posting
@@ -95,7 +95,7 @@ function App() {
     } else { // error, no posts
       const error = {
         type: 'error',
-        entry: `${user} has no posts`
+        entry: `> ${user} has no posts`
       };
       // append error to log
       setLog(prevLog => [...prevLog, error])
@@ -122,7 +122,7 @@ function App() {
     } else { // error, no posts
       const error = {
         type: 'error',
-        entry: `No posts`
+        entry: `> No posts`
       };
       // append error to log
       setLog(prevLog => [...prevLog, error])
